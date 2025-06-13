@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# ZSH Configuration Version Manager
+# Helps track and manage different versions of your zsh config
+
+VERSION="1.0.0"
+CONFIG_NAME="ZSH Configuration Package"
+CREATED_DATE="2025-06-13"
+AUTHOR="Mohd Ismail Matasin <mohdismailmatasin@gmail.com>"
+SOURCE_MACHINE="$(hostname)"
+
+# Version history
+# v1.0.0 - Initial release with comprehensive tooling
+#        - Performance optimization (sub-300ms startup)
+#        - Professional management scripts
+#        - Cross-platform compatibility
+#        - Complete plugin ecosystem

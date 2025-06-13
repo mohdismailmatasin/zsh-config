@@ -1,0 +1,30 @@
+# Default ZSH Configuration Backup Template
+# This is a minimal configuration that can be used as fallback
+
+# Basic PATH setup
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.local/bin"
+
+# Basic prompt
+PS1='%n@%m:%~$ '
+
+# History configuration
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
+
+# Basic completion
+autoload -U compinit
+compinit
+
+# Basic aliases
+alias ls='ls --color=auto'
+alias ll='ls -l'
+alias la='ls -la'
+alias ..='cd ..'
+alias ...='cd ../..'
+
+# Enable colors
+autoload -U colors && colors
+
+# Simple prompt with colors
+PS1="%{$fg[green]%}%n@%m%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}$ "
