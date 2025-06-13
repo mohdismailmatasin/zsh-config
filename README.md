@@ -1,6 +1,6 @@
 # ZSH Configuration Management System
 
-A professional-grade ZSH configuration package with advanced management tools, performance optimization, and seamless deployment capabilities for modern development environments.
+ZSH configuration package with advanced management tools, performance optimization, and seamless deployment capabilities for modern development environments.
 
 ## Overview
 
@@ -9,20 +9,24 @@ This project provides a complete ZSH shell environment that can be instantly dep
 ## Core Components
 
 ### Configuration Files
+
 - **Primary Config**: `.zshrc` with 275 lines of optimized shell configuration
 - **Theme**: Suprima-Asra theme for clean, informative prompts
 - **Plugins**: 5 essential plugins for enhanced productivity
 - **Backup System**: Minimal fallback configuration for emergency recovery
 
 ### Management Scripts
+
 The package includes 7 specialized management scripts:
 
-**Installation & Maintenance**
+#### Installation & Maintenance
+
 - `install.sh` - Automated deployment with safety checks and backups
 - `uninstall.sh` - Clean removal with optional component preservation
 - `test.sh` - Package integrity validation and syntax checking
 
-**Performance & Development**
+#### Performance & Development
+
 - `optimize.sh` - Performance analysis and benchmark reporting
 - `develop.sh` - Development tools for testing and profiling
 - `backup.sh` - Configuration backup and cloud synchronization
@@ -31,12 +35,14 @@ The package includes 7 specialized management scripts:
 ## Key Features
 
 ### Performance Optimizations
+
 - **Fast Startup**: Average 215ms initialization time
 - **Smart Caching**: Daily completion cache regeneration
 - **Optimized Loading**: Plugin load order tuned for minimal overhead
 - **Memory Efficient**: ~15MB base memory footprint
 
 ### Enhanced Shell Experience
+
 - **File Operations**: Enhanced `ls` commands with lsd integration
 - **Git Integration**: 12+ git aliases for common operations
 - **Navigation**: Quick directory traversal shortcuts
@@ -44,6 +50,7 @@ The package includes 7 specialized management scripts:
 - **Python Environment**: Automatic virtual environment activation
 
 ### Professional Tools
+
 - **Backup Management**: Timestamped backups with restore capabilities
 - **Performance Monitoring**: Continuous performance tracking
 - **Plugin Ecosystem**: Easy installation and management of additional plugins
@@ -52,6 +59,7 @@ The package includes 7 specialized management scripts:
 ## Installation
 
 ### Standard Installation
+
 ```bash
 # Download and extract the package
 cd ~/Downloads && tar -xzf zsh-config.tar.gz
@@ -65,6 +73,7 @@ cd zsh-config
 ```
 
 ### Advanced Installation Options
+
 ```bash
 # Development installation with testing
 ./develop.sh compatibility
@@ -77,6 +86,7 @@ cd zsh-config
 ## Configuration Management
 
 ### Performance Analysis
+
 ```bash
 # Full performance audit
 ./optimize.sh
@@ -89,6 +99,7 @@ cd zsh-config
 ```
 
 ### Backup Operations
+
 ```bash
 # Create configuration snapshot
 ./backup.sh backup
@@ -104,6 +115,7 @@ cd zsh-config
 ```
 
 ### Plugin Management
+
 ```bash
 # View installed plugins
 ./plugins.sh list
@@ -121,6 +133,7 @@ cd zsh-config
 ## Customization
 
 ### Local Environment Configuration
+
 The system supports machine-specific customizations through `~/.zshrc.local`:
 
 ```bash
@@ -135,6 +148,7 @@ export PROJECT_ROOT="/home/user/projects"
 ```
 
 ### Work Environment Integration
+
 For work-specific configurations, use `~/.zshrc.work`:
 
 ```bash
@@ -149,12 +163,14 @@ alias logs='kubectl logs -f deployment/app'
 ## Deployment Scenarios
 
 ### Single Machine Setup
+
 ```bash
 scp -r zsh-config user@target-machine:~/
 ssh user@target-machine "cd ~/zsh-config && ./install.sh"
 ```
 
 ### Team Distribution
+
 ```bash
 # Package for team sharing
 ./backup.sh sync /shared/configs/zsh-team-setup
@@ -165,6 +181,7 @@ cd ~/zsh-config && ./install.sh
 ```
 
 ### Container Integration
+
 ```dockerfile
 FROM ubuntu:22.04
 COPY zsh-config /tmp/zsh-config
@@ -175,16 +192,19 @@ RUN cd /tmp/zsh-config && ./install.sh
 ## System Requirements
 
 ### Minimum Requirements
+
 - ZSH 5.0 or higher
 - Git for plugin management
 - Curl for downloads and weather functions
 
 ### Recommended Tools
+
 - `lsd` for enhanced file listings
 - `nvim` or `vim` for editing
 - `bc` for performance calculations
 
 ### Platform Support
+
 - Ubuntu 18.04+ / Debian 10+
 - CentOS 7+ / RHEL 7+
 - macOS 10.15+
@@ -194,18 +214,21 @@ RUN cd /tmp/zsh-config && ./install.sh
 ## Troubleshooting
 
 ### Performance Issues
+
 1. Run `./optimize.sh` for performance analysis
 2. Use `./develop.sh profile` for detailed timing
 3. Test individual plugins with `./develop.sh test-plugins`
 4. Check system compatibility with `./develop.sh compatibility`
 
 ### Configuration Problems
+
 1. Validate syntax with `./test.sh`
 2. Check plugin health with `./plugins.sh list`
 3. Restore from backup with `./backup.sh restore`
 4. Reset to minimal config with `./uninstall.sh`
 
 ### Common Solutions
+
 - **Slow startup**: Disable heavy plugins temporarily
 - **Missing commands**: Install optional dependencies
 - **Permission errors**: Ensure scripts are executable
@@ -214,6 +237,7 @@ RUN cd /tmp/zsh-config && ./install.sh
 ## Maintenance
 
 ### Regular Maintenance Tasks
+
 ```bash
 # Weekly performance check
 ./optimize.sh
@@ -227,6 +251,7 @@ RUN cd /tmp/zsh-config && ./install.sh
 ```
 
 ### Version Management
+
 - Monitor configuration changes through `VERSION` file
 - Create backups before major updates
 - Test changes in development environment first
@@ -235,6 +260,7 @@ RUN cd /tmp/zsh-config && ./install.sh
 ## Contributing
 
 ### Development Workflow
+
 1. Create backup before changes: `./backup.sh backup`
 2. Make modifications to configuration or scripts
 3. Test changes: `./test.sh && ./develop.sh all`
@@ -242,6 +268,7 @@ RUN cd /tmp/zsh-config && ./install.sh
 5. Update documentation as needed
 
 ### Code Standards
+
 - Maintain script compatibility across platforms
 - Include error handling and user feedback
 - Follow existing naming conventions
